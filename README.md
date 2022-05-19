@@ -16,14 +16,19 @@ https://www.figma.com/developers/api
 ### Modify config with your figma API key and figma id 
 ![image](https://user-images.githubusercontent.com/1427623/92307902-f3f25080-ef99-11ea-94e4-69a06c0ad35a.png)
 `$ figma.config.json`
-
+```json
+{
+    "FIGMA_APIKEY": "384117-f83cea21-557b-4317-a799-40ff318a656c",
+    "FIGMA_ID": "GWnnS47lU4AQIVj5j2yXhF"
+}
+```
 #### Add scripts package.json
 ```json
 "scripts": {
     "figma-tokens": "npm run figma-tokens:api && npm run figma-tokens:build",
     "figma-tokens:api": "node node_modules/figma-tokens/bin/figma-tokens-api",
     "figma-tokens:build": "node node_modules/figma-tokens/bin/figma-tokens-build"
-  },`
+  },
 ```
 \$ npm run figma-tokens
 
