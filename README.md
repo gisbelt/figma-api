@@ -1,3 +1,39 @@
+## :rocket: Getting Started
+
+#### Figma design tokens example
+
+**Figma file:** [https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI](https://www.figma.com/file/IGr2xoqcZX91CU7CDr4ZsI)
+
+### Get your figma file id
+![image](https://user-images.githubusercontent.com/1427623/92307876-c73e3900-ef99-11ea-8df4-c9d41eae0ac9.png)
+
+### Get your figma API key
+https://www.figma.com/developers/api
+
+### Install dependencies:
+`$ npm install --save-dev figma-tokens`
+
+### Modify config with your figma API key and figma id 
+![image](https://user-images.githubusercontent.com/1427623/92307902-f3f25080-ef99-11ea-94e4-69a06c0ad35a.png)
+`$ figma.config.json`
+
+#### Add scripts package.json
+```json
+"scripts": {
+    "figma-tokens": "npm run figma-tokens:api && npm run figma-tokens:build",
+    "figma-tokens:api": "node node_modules/figma-tokens/bin/figma-tokens-api",
+    "figma-tokens:build": "node node_modules/figma-tokens/bin/figma-tokens-build"
+  },`
+```
+\$ npm run figma-tokens
+
+\$ npm run figma-tokens:api Generate tokens data base (only figma)
+
+\$ npm run figma-tokens:build Generate all plattforms tokens vars with a figma data base
+
+Here, I'll give you a taco: 🌮
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
